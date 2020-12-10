@@ -4,15 +4,17 @@
     box-sizing: border-box;
   }
 :root{
-    --primary-red: hsl(0, 100%, 74%);
-    --primary-green: hsl(154, 59%, 51%);
+    --primary-red:hsl(0, 100%, 74%);
+    --primary-green:hsl(154, 59%, 51%);
+    --primary-dark-green:hsl(154, 57%, 40%);
     --accent-blue:hsl(248, 32%, 49%);
-    --neutral-dark-blue:hsl(249, 10%, 26%);
-    --neutral-grayish-blue: hsl(246, 25%, 77%);
-    --primary-white: white;
+    --neutral-dark-blue:hsl(250, 16%, 37%);
+    --neutral-grayish-blue:hsl(246, 35%, 74%);
+    --primary-white:white;
     --font-family:'Poppins', sans-serif;
-    --border-radius: 5px;
-    --border-width: 2px;
+    --border-radius: 6px;
+    --border-width: 0.5px;
+    --width: 
 }
 body{
     line-height: 1.3;
@@ -26,7 +28,7 @@ a{
     color: inherit;
 }
 header{
-    margin: 30px;
+    margin: 80px 30px 30px 30px;
     line-height: 1.6;
     text-align: center;
     display:flex;
@@ -36,35 +38,96 @@ header{
 .container{
     color: var(--primary-white);
     font-family: var(--font-family);
+    margin-bottom: 50px;
+    font-size: 0.95rem;
 }
-button {
+.tryItStyleBttn{
+    padding: 20px;
+    margin-top: 30px;
+    width: 95%;
     color: var(--primary-white);
+    font-size: 0.95rem;
+}
+.tryItButton {
     background-color: var(--accent-blue);
+    border: none;
     border-radius: var(--border-radius);
-    border-width: var(--border-width);
-    border-color: var(--accent-blue);
-    padding: 20px 30px 20px 30px;
-    text-align: justify;
+    box-shadow: 0px 5px 1px hsl(248, 33%, 40%);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.tryItButton:hover {
+    background-color: hsl(248, 53%, 62%);
+    box-shadow: 0px 10px 15px hsl(248, 33%, 40%);
+    transform: translateY(-6px);
+}
+input{
+    margin: 20px 0px 20px 0px;
+}
+input::placeholder {
+    color: rgb(104, 103, 103);
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+.inputStyle{
+    width: 95%;
+    height: 60px;
+    padding: 20px;
+    font-size: 16px;
+}
+.inputBorder{
+    border-style: solid;
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
 }
 .surveyForm{  
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.surveyFormStyle{
+form {
+    width: 85%;
+}
+.formBgBorder{
     background-color:var(--primary-white);
     border-radius: var(--border-radius);
     border-width: var(--border-width);
     border-color: var(--accent-blue);
     padding: 20px 30px 20px 30px;
 }
-.surveyForm button{
+.submit{
+    width: 95%;
+    margin: 30px;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
     color: var(--primary-white);
+}
+.submitBox{
     background-color: var(--primary-green);
     border-radius: var(--border-radius);
-    border-width: var(--border-width);
-    border-color:var(--primary-green);
+    border: none;
+    box-shadow: 0px 5px 1px var(--primary-dark-green);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.submitBox:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 10px 15px var(--primary-dark-green);
+    transform: translateY(-6px);
 }
 .terms{
     color: var(--primary-red);
+}
+.font{
+    font-weight: 700;
+}
+small{
+    color: var(--neutral-grayish-blue);
+    text-align: center;
+    margin:10px;
+}
+.attribution{
+    color: rgb(12, 49, 68)
 }
