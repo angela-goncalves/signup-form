@@ -1,2 +1,2 @@
-# signup-form
+# Signup-Form
 A project from Frontend Mentor
