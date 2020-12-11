@@ -23,6 +23,11 @@ body{
     background-color: var(--primary-red);
     font-family: var(--font-family);
 }
+.bodyCentered{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -31,9 +36,6 @@ header{
     margin: 80px 30px 30px 30px;
     line-height: 1.6;
     text-align: center;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
 }
 .container{
     color: var(--primary-white);
@@ -43,8 +45,8 @@ header{
 }
 .tryItStyleBttn{
     padding: 20px;
-    margin-top: 30px;
-    width: 95%;
+    margin: 10px 0px 20px 0px;
+    width: 100%;
     color: var(--primary-white);
     font-size: 0.95rem;
 }
@@ -81,14 +83,17 @@ input::placeholder {
   border-radius: var(--border-radius);
   border-width: var(--border-width);
 }
+main{
+    width: 80%;
+}
 .surveyForm{  
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-form {
-    width: 85%;
-}
+/* form {
+} */
 .formBgBorder{
     background-color:var(--primary-white);
     border-radius: var(--border-radius);
@@ -130,4 +135,14 @@ small{
 }
 .attribution{
     color: rgb(12, 49, 68)
+}
+.myWork{
+    width:45px;
+    height: auto;
+}
+@media (min-width: 600px){
+    .bodyCentered{
+        display: flex;
+        flex-direction: row;
+    }
 }
