@@ -30,11 +30,15 @@
       <button class="tryItButton tryItBttnStyle"><span class="font">Try it free 7 days</span> then $20/mo.
         thereafter</button>
       <form class="surveyForm formBgBorder">
-        <input type="text" placeholder="First Name" class="inputStyle inputBorder" required />
-        <input type="text" placeholder="Last Name" class="inputStyle inputBorder" required />
-        <input type="email" placeholder="Email Address" class="inputStyle inputBorder" required />
-        <input type="password" placeholder="Password" class="inputStyle inputBorder" required />
-        <button type="submit" class="submit submitBox ">CLAIM YOUR FREE TRIAL</button>
+        <input type="text" placeholder="First Name" class="inputStyle inputBorder" id="name" required/>
+        <p class="errMessageN"></p>
+        <input type="text" placeholder="Last Name" class="inputStyle inputBorder" id="lastName" required />
+        <p class="errMessageL"></p>
+        <input type="email" placeholder="Email Address" class="inputStyle inputBorder" id="email" required />
+        <p class="errMessageE"></p>
+        <input type="password" placeholder="Password" class="inputStyle inputBorder" id="password" autocomplete="userpassword" required />
+        <p class="errMessageP"></p>
+        <button type="submit" class="submit submitBox" id="submit">CLAIM YOUR FREE TRIAL</button>
         <small>By clicking the button, you are agreeing to our <a href="#" class="terms font">Terms and
             Services</a></small>
       </form>
